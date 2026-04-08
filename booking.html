@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h1 class="logo">HealthCare</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+    </ul>
+</nav>
+
+<!-- Booking Form -->
+<section class="booking">
+    <h2>Book Appointment</h2>
+
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="date" required>
+        <input type="time" required>
+
+        <select required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Malcolm-jamal</option>
+            <option>Dr. Austin</option>
+            <option>Dr. Parade</option>
+        </select>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
