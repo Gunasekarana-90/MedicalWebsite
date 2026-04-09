@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <style>
+        nav a:hover {
+    color: #ffcc00;
+    transition: 0.3s;
+}
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+    </style>
     <!-- Navbar -->
     <nav class="navbar">
         <h1 class="logo">HealthCare</h1>
         <ul class="nav-links">
+
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Products</a></li>
             <li><a href="doctor.html">Doctors</a></li>
             <li><a href="Login.html">Login</a></li>
         </ul>
+        <input type="text" placeholder="Search products...">
     </nav>
 
     <!-- Hero Section -->
@@ -40,6 +53,20 @@
     <footer>
         <p>© 2026 Healthcare App. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelector(".explore-btn").onclick = () => {
+    window.location.href = "products.html";
+};
+
+document.getElementById("medicines").onclick = () => {
+    window.location.href = "products.html";
+};
+
+document.getElementById("doctor").onclick = () => {
+    window.location.href = "doctors.html";
+};
+    </script>
 
 </body>
 </html>

@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navbar */
 .navbar {
@@ -195,4 +198,8 @@ footer {
     display: block;
     width: 100%;
     margin-top: 5px;
+}
+
+.hero {
+    animation: fadeIn 1.5s ease-in;
 }
